@@ -1,16 +1,9 @@
 # prayerapp
 
-A new Flutter project.
+A new Flutter project! 
 
-## Getting Started
+Hey there! So the idea behind this app is to help Muslims keep not only theirselves but their friends accountable for praying 5 times a day. In order to do that, I wanted to make a group chat type service that allows you to anonymously nudge someone who hasn't marked that they've prayed before the time is up. 
 
-This project is a starting point for a Flutter application.
+I'm currently using Android Studio to work on the front-end design and eventually will need to work on the back-end stuff (will look into firebase). I'm hoping to get this on both iOS and Android eventually. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Stay tuned! I'm pretty excited about this project! :) 
