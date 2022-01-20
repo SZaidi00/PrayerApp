@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "131706901336",
+    "project_id": "prayerapp-906cb",
+    "storage_bucket": "prayerapp-906cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131706901336:android:f49d3fee01ca21fc650b2d",
+        "android_client_info": {
+          "package_name": "com.salahummah.prayerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131706901336-c8tin8k61qj9marn22cjbcucmm76t4m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN4A_7cpUWSarQLI2EzGxtGxsLhaU5MdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131706901336-c8tin8k61qj9marn22cjbcucmm76t4m1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
