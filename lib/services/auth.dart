@@ -10,6 +10,15 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
     return user != null ? MyUser(uid: user.uid) : null;
   }
 
+  // auth change user steam
+  Stream<MyUser?> get user{
+    return _auth.authStateChanges()
+        .map((User? user) => _userfromFirebase(user!)); //this is the same as below
+     //     .map(_userfromFirebase);
+  }
+
+
+
 // sign in anon
 Future signInAnon() async {
   try {
