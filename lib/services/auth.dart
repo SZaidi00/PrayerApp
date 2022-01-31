@@ -3,7 +3,7 @@ import '../models/myuser.dart';
 
 class AuthService {
 
-final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
 // create user object
   MyUser? _userfromFirebase(User user) {
@@ -11,33 +11,40 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
   }
 
   // auth change user steam
-  Stream<MyUser?> get user{
+  Stream<MyUser?> get user {
     return _auth.authStateChanges()
-        .map((User? user) => _userfromFirebase(user!)); //this is the same as below
-     //     .map(_userfromFirebase);
+        .map((User? user) =>
+        _userfromFirebase(user!)); //this is the same as below
+    //     .map(_userfromFirebase);
   }
-
 
 
 // sign in anon
-Future signInAnon() async {
-  try {
-
-    UserCredential result = await _auth.signInAnonymously(); //AuthResult
-    User? user = result.user;                                // FirebaseUser
-    return _userfromFirebase(user!);
-
-  } catch (e) {
-    print(e.toString());
-    return null;
+  Future signInAnon() async {
+    try {
+      UserCredential result = await _auth.signInAnonymously(); //AuthResult
+      User? user = result.user; // FirebaseUser
+      return _userfromFirebase(user!);
+    } catch (e) {
+      print(e.toString());
+      return null;
+    }
   }
-}
-  }
+
   // Sign in with Email
 
   // Register
 
 
   //Sign out
+  Future signOut() async {
+    try {
+      return await _auth.signOut();
+    } catch (error) {
+      print(error.toString());
+      return null;
+    }
+  }
 
+}
 

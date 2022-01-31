@@ -10,9 +10,14 @@ class initialdirectory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final user = Provider.of<MyUser>(context);
-    print(user);
+    final user = Provider.of<MyUser?>(context);
+    if(user == null){
+      return Authenticate();
+    }
+    else{
+      return Home();
+    }
 
-    return Authenticate();
+
   }
 }

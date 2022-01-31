@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../services/auth.dart';
+
 class Home extends StatefulWidget {
    @override
   _HomeState createState() => _HomeState();
@@ -7,6 +9,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   @override
+  final AuthService _auth = AuthService();
 
 
 
@@ -25,7 +28,9 @@ class _HomeState extends State<Home> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () async {
+              await _auth.signOut();
+            },
             icon: const Icon(Icons.settings_outlined),
             alignment: Alignment.center ,
           )
