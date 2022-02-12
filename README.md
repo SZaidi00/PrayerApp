@@ -8,3 +8,6 @@ I'm currently using Android Studio to work on the front-end design and I will us
 
 
 Stay tuned! I'm pretty excited about this project! :) 
+
+
+So while working on this, I learned that there was a better platform to work on to make this app possible. So this folder will be retired now and I will use React Native. I gotta restart so now I will be a bit further behind on my schedule. But heres to learning! 
